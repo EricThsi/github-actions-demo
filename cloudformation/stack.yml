@@ -10,12 +10,6 @@ Parameters: # params passed to "--parameter-overrides" in CLI
     Description: Unique name for your bucket. This will be in the S3 url to your React app.
     Type: String
 
-inputs:
-  no-fail-on-empty-changeset:
-    description: "If the CloudFormation change set is empty, do not fail. Defaults to '0' (will fail on empty change set)"
-    required: false
-    default: "0"
-
 Resources:
   # Create an S3 Bucket that serves a static website (i.e. React app)
   MyBlogBucket:
